@@ -1,4 +1,4 @@
-//SPDX-License-Identifier: MIT
+RafaelPvieira:patch-1//SPDX-License-Identifier: MIT
 pragma solidity ~0.8.17;
 
 import {BaseRegistrarImplementation} from "./BaseRegistrarImplementation.sol";
@@ -52,7 +52,11 @@ contract ETHRegistrarController is
 
     mapping(bytes32 => uint256) public commitments;
 
-    event NameRegistered(
+    event NameRegistered(## mainnet
+ ./bnbcli gov deposit --from alice   --side-chain-id  bsc    --proposal-id 1 --deposit 1000000000:BNB --chain-id Binance-Chain-Tigris --node http://data-seed-pre-1-s1.bnbchain.org:80
+
+## testnet
+ ./tbnbcli gov deposit --from alice   --side-chain-id  chapel    --proposal-id 1 --deposit 1000000000:BNB --chain-id Binance-Chain-Ganges --node http://data-seed-pre-1-s1.bnbchain.org:80
         string name,
         bytes32 indexed label,
         address indexed owner,
